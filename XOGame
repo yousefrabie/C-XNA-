@@ -180,7 +180,7 @@ namespace Game50
                 }
                 else if (Oplay)
                 {
-                    Opos[Oindex] = new Vector2(400, 200);
+                    Opos[Oindex] = new Vector2(0, 200);
                     Oindex++;
                     // Xindex = 0;
                     Oplay = false;
@@ -208,9 +208,86 @@ namespace Game50
                 }
                 time++;
             }
-            
-           
-
+            else if (Mykey.IsKeyDown(Keys.NumPad5) && time == (int)gameTime.TotalGameTime.TotalSeconds)
+            {
+                if (Xplay == true)
+                {
+                    Xpos[Xindex] = new Vector2(400, 200);
+                    Xindex++;
+                    // Oindex = 0;
+                    Xplay = false;
+                    Oplay = true;
+                }
+                else if (Oplay)
+                {
+                    Opos[Oindex] = new Vector2(400, 200);
+                    Oindex++;
+                    // Xindex = 0;
+                    Oplay = false;
+                    Xplay = true;
+                }
+                time++;
+            }
+            else if (Mykey.IsKeyDown(Keys.NumPad6) && time == (int)gameTime.TotalGameTime.TotalSeconds)
+            {
+                if (Xplay == true)
+                {
+                    Xpos[Xindex] = new Vector2(0, 400);
+                    Xindex++;
+                    // Oindex = 0;
+                    Xplay = false;
+                    Oplay = true;
+                }
+                else if (Oplay)
+                {
+                    Opos[Oindex] = new Vector2(0, 400);
+                    Oindex++;
+                    // Xindex = 0;
+                    Oplay = false;
+                    Xplay = true;
+                }
+                time++;
+            }
+            else if (Mykey.IsKeyDown(Keys.NumPad7) && time == (int)gameTime.TotalGameTime.TotalSeconds)
+            {
+                if (Xplay == true)
+                {
+                    Xpos[Xindex] = new Vector2(200, 400);
+                    Xindex++;
+                    // Oindex = 0;
+                    Xplay = false;
+                    Oplay = true;
+                }
+                else if (Oplay)
+                {
+                    Opos[Oindex] = new Vector2(200, 400);
+                    Oindex++;
+                    // Xindex = 0;
+                    Oplay = false;
+                    Xplay = true;
+                }
+                time++;
+            }
+            else if (Mykey.IsKeyDown(Keys.NumPad8) && time == (int)gameTime.TotalGameTime.TotalSeconds)
+            {
+                if (Xplay == true)
+                {
+                    Xpos[Xindex] = new Vector2(400, 400);
+                    Xindex++;
+                    // Oindex = 0;
+                    Xplay = false;
+                    Oplay = true;
+                }
+                else if (Oplay)
+                {
+                    Opos[Oindex] = new Vector2(400, 400);
+                    Oindex++;
+                    // Xindex = 0;
+                    Oplay = false;
+                    Xplay = true;
+                }
+                time++;
+            }
             base.Update(gameTime);
         }
 
